@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body {
+
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Quicksand', sans-serif;
+    background: #0b090a;
+
+}
+
+header h1 {
+
+    color: #fff;
+    text-align: center;
+    margin: 30px;
+}
+
+.container {
+
+    background: #13272f;
+    margin: 0 auto;
+    padding: 20px;
+    height: 50%;
+    width: 50%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.input__container {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    padding: 20px 0px 20px 0px;
+}
+
+.input__container form {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.input__container input {
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    width: 70%;
+    outline: none;
+    background: #7f8e94;
+    border: none;
+    color: #fff;
+    padding: 10px 0px 10px 10px ;
+
+}
+
+.input__container input::placeholder {
+
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.input__container button {
+
+    width: 20%;
+    padding: 13px;
+    background: #119ad0;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card__container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    width: 80%;
+    height: 20%;
+    padding: 0;
+    list-style: none;
+    gap: 10px;
+
+}
+
+.card__todo {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px 10px 30px;
+    background: #0b090a;
+
+}
+
+.check {
+
+    color: #119ad0;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.card__todo h1 {
+
+    font-size: 15px;
+    color: #fff;
+    
+}
+
+.trash {
+
+    color: #119ad0;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px){
+    
+    .container {
+
+        width: 80%;
+
+    }
+
+    .input__container {
+
+        width: 100%;
+
+    }
+
+    .card__container {
+
+        width: 100%;
+
+    }
+
+}
