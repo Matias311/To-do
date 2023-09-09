@@ -1,30 +1,52 @@
-import checkbox from './components/check.js';
-import trashCan from './components/trash.js';
+const input = document.querySelector("[data-input]");
+const btn = document.querySelector("[data-btn]");
+const ul = document.querySelector("[data-card]");
+let array = [];
+import checkbox from "./components/check.js";
+import trashCan from "./components/trash.js";
 
-const texto = document.querySelector('[data-input]');
-const btn = document.querySelector('[data-btn]');
-
-
-
-const crearTarea = (evento) => {
-
-    evento.preventDefault();
-    const value = texto.value;
-    const list = document.querySelector('[data-card]');
-    const task = document.createElement('li');
-    task.classList.add('card__todo');
-    const titletask = document.createElement('h1')
-    titletask.innerText = value
-    texto.value = ' ';
-    const contenido = `
-          
-    `
-    task.innerHTML = contenido;
-    list.appendChild(task);
-    task.appendChild(checkbox())
-    task.appendChild(titletask)
-    task.appendChild(trashCan())
-
+function task() {
+  let task = input.value;
+  let data = {
+    task: task,
+  };
+  array = [data];
 }
 
-btn.addEventListener('click', crearTarea);
+function crearHTML() {
+  if (array.length > 0) {
+    array.forEach((task) => {
+      const li = document.createElement("li");
+      li.classList.add("card__todo");
+      const title = document.createElement("h1");
+      title.innerHTML = task.task;
+      const contenido = ``;
+      li.innerHTML = contenido;
+      ul.appendChild(li);
+      li.appendChild(checkbox());
+      li.appendChild(title);
+      li.appendChild(trashCan());
+    });
+  }
+}
+
+function local() {
+  localStorage.setItem("task", JSON.stringify(array));
+}
+
+function reLoad() {
+  document.addEventListener("DOMContentLoaded", () => {
+    array = JSON.parse(localStorage.getItem("task"));
+    crearHTML();
+  });
+}
+
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
+  task();
+  input.value = "";
+  crearHTML();
+  local();
+});
+
+reLoad();
