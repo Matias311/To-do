@@ -6,7 +6,7 @@ body {
     padding: 0px;
     font-family: 'Quicksand', sans-serif;
     background: #0b090a;
-
+    box-sizing: border-box;
 }
 
 header h1 {
@@ -57,7 +57,7 @@ header h1 {
     background: #7f8e94;
     border: none;
     color: #fff;
-    padding: 10px 0px 10px 10px ;
+    padding: 10px 10px ;
 
 }
 
@@ -113,7 +113,7 @@ header h1 {
 
     font-size: 15px;
     color: #fff;
-    
+    padding: 0px 10px;   
 }
 
 .trash {
