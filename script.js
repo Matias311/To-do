@@ -10,7 +10,7 @@ function task() {
   let data = {
     task: task,
   };
-  array = [data];
+  array = [...array, data];
 }
 
 function crearHTML() {
