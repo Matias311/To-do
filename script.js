@@ -41,7 +41,7 @@ function local() {
 
 function reLoad() {
   document.addEventListener("DOMContentLoaded", () => {
-    array = JSON.parse(localStorage.getItem("task"));
+    array = JSON.parse(localStorage.getItem("task")) || [];
     crearHTML();
   });
 }
