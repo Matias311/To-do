@@ -9,6 +9,7 @@ function task() {
   let task = input.value;
   let data = {
     task: task,
+    id: Date.now(),
   };
   array = [...array, data];
 }
