@@ -14,6 +14,7 @@ function task() {
 }
 
 function crearHTML() {
+  clearHTML();
   if (array.length > 0) {
     array.forEach((task) => {
       const li = document.createElement("li");
@@ -28,6 +29,10 @@ function crearHTML() {
       li.appendChild(trashCan());
     });
   }
+}
+
+function clearHTML() {
+  ul.innerHTML = "";
 }
 
 function local() {
