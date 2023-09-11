@@ -61,7 +61,6 @@ btn.addEventListener("click", (e) => {
 ul.addEventListener("click", (e) => {
   if (e.target.classList.contains("trash")) {
     const taskId = e.target.closest("li").id;
-    console.log(taskId);
     removeTask(taskId);
   }
 });
