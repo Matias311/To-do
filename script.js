@@ -70,5 +70,4 @@ function removeTask(taskId) {
   array = array.filter((task) => task.id !== parseInt(taskId));
   local();
   document.getElementById(taskId).remove();
-  console.log(array);
 }
