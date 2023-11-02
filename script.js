@@ -22,6 +22,10 @@ function local() {
 /* Toma los datos del valor del input y los guarda y copia en un array */
 function task() {
   let task = input.value;
+  /* Lo que hace es prevenir que se pueda crear una tarea vacia */
+  if (task === "") {
+    return;
+  }
   let data = {
     task: task,
     id: new Date().getTime(),

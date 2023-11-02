@@ -7,13 +7,33 @@ body {
     font-family: 'Quicksand', sans-serif;
     background: #0b090a;
     box-sizing: border-box;
+
 }
 
 header h1 {
 
     color: #fff;
     text-align: center;
-    margin: 30px;
+    margin: 30px 30PX 10PX 30PX;
+
+}
+
+.subtitle{
+
+    height: 50%;
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.subtitle p {
+
+    color: #fff;
+    margin: 0px 0px 10px 0px;
+    font-style: italic;
+    text-align: justify;
+    font-size: 15px;
+    
 }
 
 .container {
