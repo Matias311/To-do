@@ -177,4 +177,9 @@ header h1 {
 
     }
 
+    .inputTask{
+        width: auto;
+        height: auto;
+    }
+
 }
