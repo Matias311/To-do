@@ -139,9 +139,9 @@ header h1 {
     text-align: center;
     padding: 5px;
     font-family: 'Quicksand', sans-serif;
-    width: fit-content;
+    width: -webkit-fill-available;
     outline: none;
-    
+
 }
 
 .trash {
