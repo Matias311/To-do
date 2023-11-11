@@ -129,11 +129,19 @@ header h1 {
     cursor: pointer;
 }
 
-.card__todo h1 {
+.inputTask {
 
     font-size: 15px;
     color: #fff;
     padding: 0px 10px;   
+    border: none;
+    background: transparent;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Quicksand', sans-serif;
+    width: fit-content;
+    outline: none;
+    
 }
 
 .trash {

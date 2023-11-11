@@ -32,6 +32,4 @@ function frase() {
   text.innerHTML = frases[randomNumber()].frase;
 }
 
-let randomNumber = () => {
-  return Math.floor(Math.random() * frases.length);
-};
+let randomNumber = () => Math.floor(Math.random() * frases.length);

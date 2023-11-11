@@ -45,8 +45,9 @@ function crearHTML() {
       li.classList.add("card__todo");
       const icon = document.createElement("i");
       icon.classList.add("fa-regular", "fa-square-check", "check");
-      const title = document.createElement("h1");
-      title.innerHTML = task.task;
+      const title = document.createElement("input");
+      title.classList.add("inputTask");
+      title.value = task.task;
       const contenido = ``;
       li.innerHTML = contenido;
       ul.appendChild(li);
@@ -70,6 +71,12 @@ function crearHTML() {
             task.done = true;
             local();
           }
+        }
+        /* Checks si la tarea no esta lista la podemos modificar pero si lo esta no se podra modificar el texto de la tarea */
+        if (task.done === true) {
+          title.setAttribute("disabled", "");
+        } else if (task.done === false) {
+          title.removeAttribute("disabled", "");
         }
       });
 
