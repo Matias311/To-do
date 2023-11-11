@@ -127,6 +127,7 @@ header h1 {
     color: #119ad0;
     font-size: 19px;
     cursor: pointer;
+    transition: all .2s;
 }
 
 .inputTask {
@@ -149,6 +150,7 @@ header h1 {
     color: #119ad0;
     font-size: 19px;
     cursor: pointer;
+    transition: all .2s;
 }
 
 @media screen and (max-width: 480px){
@@ -177,9 +179,16 @@ header h1 {
 
     }
 
+    .check{
+        margin: 5px;
+    }
+
+    .trash{
+        margin: 5px;
+    }
+
     .inputTask{
-        width: auto;
-        height: auto;
+        width: 70%;
     }
 
 }
