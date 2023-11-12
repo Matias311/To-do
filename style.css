@@ -142,7 +142,13 @@ header h1 {
     font-family: 'Quicksand', sans-serif;
     width: -webkit-fill-available;
     outline: none;
+    height: 30px;
+    resize: none;
 
+}
+
+.inputTask::-webkit-scrollbar{
+    width: 0;
 }
 
 .trash {

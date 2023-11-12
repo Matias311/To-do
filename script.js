@@ -45,7 +45,7 @@ function crearHTML() {
       li.classList.add("card__todo");
       const icon = document.createElement("i");
       icon.classList.add("fa-regular", "fa-square-check", "check");
-      const title = document.createElement("input");
+      const title = document.createElement("textarea");
       title.classList.add("inputTask");
       title.value = task.task;
       const contenido = ``;
